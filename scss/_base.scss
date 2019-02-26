@@ -1,0 +1,33 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+body {
+	background-color: $newcolor;
+	font-family: $basefont;
+}
+
+a {
+	padding: 1em;
+}
+
+.nav {
+	text-align: center;
+	@include box;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	a {
+		display: inline-block;
+		width: 150px;
+		height: 130px;
+
+		span {
+			position: absolute;
+			top: -9999em;
+			left: -9999em;
+		}
+	}
+}
